@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nanachi Heaven</title>
+        <link rel="stylesheet" href="style.css">
+        <header class="Header">
+            <h1>Welcome to Nanachi Heaven</h1>
+            <img src="./Pictures/Signature.png">
+            <div class="container">
+                <div class="padding"><h1><a class="link" href="index.html">Home</a></h1></div>
+                <div class="padding"><h1><a class="link" href="Product.html">Product</a></h1></div>
+                <div class="padding"><h1><a class="link" href="Contact.html">Contact</a></h1></div>
+            </div>
+        </header>
+    </head>
+    <body class="body">
+        <div class="Spacer"></div>
+        <p style="text-align: center; background-color: burlywood; border-style: ridge; border-color: goldenrod; border-radius: 8px; border-width: 6px; width: 15%; margin-left: auto; margin-right: auto;"
+        >Fluffiness scale</p>
+        <table>
+            <tr>
+                <th>Qualities of the Abyss</th>
+                <th>Nanachi Approved!</th>
+            </tr>
+            <tr>
+                <td>Cute</td>
+                <td class="Check"><img src="./Pictures/Nanachi's_trivia.png"></td>
+            </tr>
+            <tr>
+                <td>Fluffy</td>
+                <td class="Check"><img src="./Pictures/Nanachi's_trivia.png"></td>
+            </tr>
+            <tr>
+                <td>Squishy</td>
+                <td class="Check"><img src="./Pictures/Nanachi's_trivia.png"></td>
+            </tr>
+            <tr>
+                <td>Bnuy</td>
+                <td class="Check"><img src="./Pictures/Nanachi's_trivia.png"></td>
+            </tr>
+        </table>
+        <img id="Kuva" src="./Pictures/Background.jpg">
+        <div class="Button">
+            <h1 id="ButtonText" onclick="NaytaKuva()">Preview</h1>
+        </div>
+        
+        <script>
+            function NaytaKuva() {
+                const Kuva = document.getElementById("Kuva");
+                if (Kuva.style.display === "none" || Kuva.style.display === "") {
+                    Kuva.style.display = "block";}
+                else {
+                    Kuva.style.display = "none";}}
+        </script>
+    </body>
+</html>

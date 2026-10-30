@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS-Mod 1 - 6</title>
+</head>
+<body>
+    <h1>Neliöjuuri Laskuri</h1>
+    <p id="Neliöjuuri"></p>
+
+    <script>
+        const Vastaus = confirm("Lasketaanko neliöjuuri?")
+        if(Vastaus === true) {
+            const Luku = prompt("Anna numero neiliöjuurettavaksi")
+            if(Luku > 0) {
+                const Neliöjuuri = Math.sqrt(parseInt(Luku))
+                document.querySelector("#Neliöjuuri").innerHTML = Luku + " neiliöjuuri on: " + Neliöjuuri.toFixed(2)
+            } else {
+                document.querySelector("#Neliöjuuri").innerHTML = "Negatiivisen luvun neliöjuurta ei ole määritelty."
+            }
+        } else {
+            document.querySelector("#Neliöjuuri").innerHTML = "Neliöjuurta ei lasketa."
+        }
+    </script>
+</body>
+</html>

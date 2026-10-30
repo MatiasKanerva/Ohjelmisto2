@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS-Mod 1 -4</title>
+</head>
+<body>
+    <h1>Harry Potter tuva</h1>
+    Anna Nimesi: <input type="text" id="Teksti" value="">
+    <button onclick="HarryPotter()">Valmis</button>
+    <p id="Tuva"></p>
+    <p id="Teksti"></p>
+    <p id="Easter-Egg"></p>
+    <script>
+        function HarryPotter() {
+            const Nimi = document.getElementById("Teksti").value;
+            const Tuvat = ["Rohkelikko", "Luihuinen", "Puuskupuh", "Korpinkynsi"];
+
+            const randomi = Math.floor(Math.random() * 4);
+            const Valinta = Tuvat[randomi]
+            document.querySelector("#Tuva").innerHTML = Nimi + ", sinä olet: " + Valinta;
+
+            if (randomi === 0) {
+                document.querySelector("#Teksti").innerHTML = "Olet heikko";
+            } else if (randomi === 1){
+                document.querySelector("#Teksti").innerHTML = "Olet laiha";
+            } else if (randomi === 2) {
+                document.querySelector("#Teksti").innerHTML = "Olet onnekas!";
+            } else document.querySelector("#Teksti").innerHTML = "Olet kusipää";
+
+            if (Nimi === "Matias") {
+                document.querySelector("#Easter-Egg").innerHTML = "Goated name! My man!"
+            }
+        }
+    </script>
+</body>
+</html>
