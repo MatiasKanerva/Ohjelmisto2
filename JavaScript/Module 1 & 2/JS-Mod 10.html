@@ -5,35 +5,39 @@
 </head>
 <body>
     <h1>Nopan todennäköisyys</h1>
+    Kerro noppien lukumäärä ja niiden silmälukujen summa: <input type="text" id="Teksti" value="1 2">
+    <button onclick="NopanHeitto()">Valmis</button>
     <p id="heitot"></p>
     <p id="todennäköisyys"></p>
     <script>
-        const Vastaus = prompt("Kerro noppien lukumäärä ja niiden silmälukujen summa.");
-        const luvut = Vastaus.split(" ");
-        const Määrä = luvut[0];
-        const Silmäluku = luvut[1];
+        function NopanHeitto() {
+            const Vastaus = document.getElementById("Teksti").value;
+            const luvut = Vastaus.split(" ");
+            const Määrä = luvut[0];
+            const Silmäluku = luvut[1];
 
-        let Oikein = 0;
-        let Väärin = 0;
-        if(Silmäluku >= Määrä || Silmäluku <= Määrä * 6) {
-            for (let index = 0; index < 100000; index++) {
-                let Summa = 0;
-                for (let index2 = 0; index2 < Määrä; index2++) {
-                    let Noppa = Math.floor(Math.random() * 6) + 1;
-                    Summa = Noppa + Summa;
-                    console.log(Summa)
+            let Oikein = 0;
+            let Väärin = 0;
+            if(Silmäluku >= Määrä || Silmäluku <= Määrä * 6) {
+                for (let index = 0; index < 100000; index++) {
+                    let Summa = 0;
+                    for (let index2 = 0; index2 < Määrä; index2++) {
+                        let Noppa = Math.floor(Math.random() * 6) + 1;
+                        Summa = Noppa + Summa;
+                        console.log(Summa)
+                    }
+                    if(Summa == Silmäluku) {
+                        Oikein += 1;
+                    } else {
+                        Väärin += 1;
+                    }
                 }
-                if(Summa == Silmäluku) {
-                    Oikein += 1;
-                } else {
-                    Väärin += 1;
-                }
+                document.querySelector("#heitot").innerHTML = "Nopan oikein saadut summat: " + Oikein + ". Nopan väärin saadut summat: " + Väärin
+                document.querySelector("#todennäköisyys").innerHTML = "Todennäköisyys on: " + ((Oikein / Väärin) * 100).toFixed(2) + "%"      
+            } else {
+                document.querySelector("#heitot").innerHTML = "Tämä silmäluku ei ole mahdollista noppien määrällä"
             }
-            document.querySelector("#heitot").innerHTML = "Nopan oikein saadut summat: " + Oikein + ". Nopan väärin saadut summat: " + Väärin
-            document.querySelector("#todennäköisyys").innerHTML = "Todennäköisyys on: " + ((Oikein / Väärin) * 100).toFixed(2) + "%"      
-        } else {
-            document.querySelector("#heitot").innerHTML = "Tämä silmäluku ei ole mahdollista noppien määrällä"
-        }        
+        }     
     </script>
 </body>
 </html>
