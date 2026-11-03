@@ -17,12 +17,24 @@
             color: maroon;
             font-weight: bold;
         }
+        a {
+            color: maroon;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        a:visited {
+            color: maroon;
+        }
+        a:hover {
+            color: dodgerblue;
+        }
     </style>
 </head>
 
-% = Tehty, <br>
+<div>
+<br>% = Tehty, <br>
 V = Tekemättä <br> <br>
-
+</div>
 <h2># Deploying your website</h2> <br>
     <a href="https://users.metropolia.fi/~matikane">https://users.metropolia.fi/~matikane</a> <br> <br>
 
