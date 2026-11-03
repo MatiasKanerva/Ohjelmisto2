@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JS-Mod 1 - 6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Mod 1&2 - 6</title>
 </head>
 <body>
     <h1>Neliöjuuri Laskuri</h1>
     Anna numero neiliöjuurettavaksi <input type="text" id="Teksti" value="1">
-    <button onclick="NopanHeitto()">Valmis</button>
+    <button onclick="Funktio()">Valmis</button>
     <p id="Neliöjuuri"></p>
 
     <script>
-        function NopanHeitto() {
+        function Funktio() {
             const Vastaus = confirm("Lasketaanko neliöjuuri?");
             if(Vastaus === true) {
                 const Luku = document.getElementById("Teksti").value

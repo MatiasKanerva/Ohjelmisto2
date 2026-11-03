@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <title>JS-Mod 1 - 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Mod 1&2 - 3</title>
 </head>
 <body>
     Kirjoita 3 kokonaislukua: <input type="text" id="Teksti" value="1 2 3">
-    <button onclick="Laskin()">Laske</button>
+    <button onclick="Funktio()">Laske</button>
     <h1>Summa</h1>
     <p id="Summa"></p>
 
@@ -14,9 +16,8 @@
     <h1>Keskiarvo</h1>
     <p id="Keskiarvo"></p>
     <script>
-        function Laskin() {
+        function Funktio() {
             const Luvut = document.getElementById("Teksti").value;
-            console.log(Luvut)
             const KokoLuku = Luvut.split(" ");
             
             const yksi = parseInt(KokoLuku[0]);

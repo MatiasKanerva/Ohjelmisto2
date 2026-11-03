@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Mod 3 - 4</title>
+</head>
+<body>
+    <h1>Käänteis Taulukko</h1>
+    Kirjoita viisi lukua: <input type="text" id="Teksti" value="1 2 3 4 5">
+    <button onclick="Funktio()">Valmis</button>
+    <p id="Target"></p>
+
+    <script>
+        function Funktio() {
+            const Input = document.getElementById("Teksti").value;
+            const Luvut = Input.split(" ");
+            let Taulukko = [];
+            
+
+            for (let index = 0; index < 5; index++) {
+                Taulukko[index] = Luvut[index];
+            }
+            Taulukko.reverse()
+            document.querySelector("#Target").innerHTML = "Käännetty taulukko on: " + Taulukko;
+        }
+    </script>
+</body>
+</html>

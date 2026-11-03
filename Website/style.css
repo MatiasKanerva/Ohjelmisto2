@@ -4,7 +4,7 @@
     src: url(./Playhouse-Medium.woff) format('woff');
 }
 
-body {
+.body {
     background-image: url("./Pictures/Background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;

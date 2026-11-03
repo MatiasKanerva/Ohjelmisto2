@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JS-Mod 1 - 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Mod 1&2 - 7</title>
 </head>
 <body>
     <h1>Nopan heitto</h1>
     Kuinka monta kertaa heität noppaa?: <input type="text" id="Teksti" value="1">
-    <button onclick="NopanHeitto()">Valmis</button>
+    <button onclick="Funktio()">Valmis</button>
     <p id="Noppa"></p>
     <script>
-        function NopanHeitto() {
+        function Funktio() {
             let Summa = 0
             const Heitot = document.getElementById("Teksti").value;
             for (let index = 0; index < Heitot; index++) {
