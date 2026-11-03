@@ -50,7 +50,6 @@ V = Tekemättä <br> <br>
     8. V / 3p <br>
     9. V / 2p <br>
     10. % / 5p <br> <br>
-
     Tehdyt tehtävät: 7/10 <br>
     Pisteet 19/27 <br> <br>
 </div>
@@ -67,8 +66,8 @@ V = Tekemättä <br> <br>
     9. V / 3p <br>
     10. V / 8p <br> <br>
 
-    Tehdyt tehtävät: 1/10 <br>
-    Pisteet: 2/27 <br> <br>
+    Tehdyt tehtävät: 1/10
+    Pisteet: 2/27
 </div>
 <h2># JavaScriptMod 4 | DOM ja tapahtumat</h2>
 <div>
