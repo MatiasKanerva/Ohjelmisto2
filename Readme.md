@@ -53,6 +53,7 @@ V = Tekemättä <br> <br>
     Tehdyt tehtävät: 7/10 <br>
     Pisteet 19/27 <br> <br>
 </div>
+
 <h2># JavaScriptMod 3 | Taulukot ja funktiot</h2>
 <div>
     1. % / 2p <br>
@@ -65,10 +66,10 @@ V = Tekemättä <br> <br>
     8. V / 2p <br>
     9. V / 3p <br>
     10. V / 8p <br> <br>
-
-    Tehdyt tehtävät: 1/10
-    Pisteet: 2/27
+    Tehdyt tehtävät: 1/10 <br>
+    Pisteet: 2/27 <br>
 </div>
+
 <h2># JavaScriptMod 4 | DOM ja tapahtumat</h2>
 <div>
     1. V / 2p <br>
@@ -91,19 +92,19 @@ V = Tekemättä <br> <br>
     18. V / 4p <br>
     19. V / 2p <br>
     20. V / 6p <br> <br>
-
     Tehdyt tehtävät: 0/20 <br>
     Pisteet: 0/30 <br> <br>
 </div>
+
 <h2># Python Flask -palvelin</h2> <br>
 <div>
     1. V / 4p <br>
     2. V / 10p <br>
     3. V / 6p <br> <br>
-
     Tehdyt tehtävät: 0/3 <br>
     Pisteet: 0/20 <br> <br>
 </div>
+
 <h2># JavaScriptMod 5 | AJAX</h2> <br>
 <div>
     1. V / 2p <br>
@@ -113,10 +114,10 @@ V = Tekemättä <br> <br>
     5. V / 2p <br>
     6. V / 4p <br>
     7. V / 16p <br> <br>
-
     Tehdyt tehtävät: 0/7 <br>
     Pisteet: 0/36 <br> <br>
 </div>
+
 <h2># "Nnaaa~" -Nanachi</h2>
 ⣿⣿⠀⡜⠀⠀⠀⣼⠀⠀⠀⠀⠀⠈⢹⣿⣿⣿⣦⠘⠆⠈⢿⣷⣦⣤⣤⣤⣼⣿ <br>
 ⣿⡇⠀⠃⠀⡆⠠⣿⢀⠀⠀⠀⠀⡀⢸⣿⡝⠻⢿⣿⣶⣤⣀⠙⠿⣿⣿⣿⣿⣿ <br>
