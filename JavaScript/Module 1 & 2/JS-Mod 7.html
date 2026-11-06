@@ -9,16 +9,20 @@
     <h1>Nopan heitto</h1>
     Kuinka monta kertaa heität noppaa?: <input type="text" id="Teksti" value="1">
     <button onclick="Funktio()">Valmis</button>
+    <ul id="Target"></ul>
     <p id="Noppa"></p>
     <script>
         function Funktio() {
             let Summa = 0
+            let html_str = "";
             const Heitot = document.getElementById("Teksti").value;
             for (let index = 0; index < Heitot; index++) {
                 let Randomi = Math.floor(Math.random() * 6) + 1;
                 Summa = Randomi + Summa;
+                html_str = html_str + "<Li>" + "Heitit nopasta: " + Randomi + "</li>";
             };
             document.querySelector("#Noppa").innerHTML = "Nopan heittojen summa on: " + Summa;
+            document.querySelector("#Target").innerHTML = html_str
         }
     </script>
 </body>

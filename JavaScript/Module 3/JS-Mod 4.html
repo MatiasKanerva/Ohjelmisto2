@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Mod 3 - 4</title>
+</head>
+<body>
+    <h1></h1>
+    Kerro lukuja: <input type="text" id="Teksti" value="1 2 3 4 5 6">
+    <button onclick="Funktio()">Valmis</button>
+    <ul id="Target"></ul>
+    <script>
+        function Funktio() {
+            const luku = document.getElementById("Teksti").value
+            const splitti = luku.split(" ")
+            let Taulukko = []
+            let html_str = ""
+            for (let i = 0; i < splitti.length; i++) {
+                Taulukko.push(splitti[i])
+                Taulukko.sort()
+                
+           }
+           for (let i = 0; i < Taulukko.length; i++) {
+            html_str = html_str + "<li>" + Taulukko[i] + "</li>"
+           }
+            
+            document.querySelector("#Target").innerHTML = html_str
+        }
+    </script>
+</body>
+</html>

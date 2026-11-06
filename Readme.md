@@ -36,7 +36,7 @@
 V = Tekemättä <br> <br>
 </div>
 <h2># Deploying your website</h2> <br>
-    <a href="https://users.metropolia.fi/~matikane">https://users.metropolia.fi/~matikane</a> <br> <br>
+    <a href="https://users.metropolia.fi/~matikane/Website/">https://users.metropolia.fi/~matikane/Website/</a> <br> <br>
 
 <h2># JavaScriptMod 1 & 2 | Vuorovaikutteiset ohjelmat ja ohjausrakenteet</h2> <br>
 <div>
@@ -57,17 +57,17 @@ V = Tekemättä <br> <br>
 <h2># JavaScriptMod 3 | Taulukot ja funktiot</h2>
 <div>
     1. % / 2p <br>
-    2. V / 2p <br>
-    3. V / 2p <br>
-    4. V / 2p <br>
+    2. % / 2p <br>
+    3. % / 2p <br>
+    4. % / 2p <br>
     5. V / 2p <br>
     6. V / 2p <br>
     7. V / 2p <br>
     8. V / 2p <br>
-    9. V / 3p <br>
+    9. % / 3p <br>
     10. V / 8p <br> <br>
-    Tehdyt tehtävät: 1/10 <br>
-    Pisteet: 2/27 <br>
+    Tehdyt tehtävät: 5/10 <br>
+    Pisteet: 11/27 <br>
 </div>
 
 <h2># JavaScriptMod 4 | DOM ja tapahtumat</h2>

@@ -7,9 +7,26 @@
 </head>
 <body>
     <h1></h1>
+    Kerro kuinka monta juoksijaa osallistuu? <input type="text" id="Luku" value="3">
+    <button onclick="Funktio()">Valmis</button>
+    <p>Juoksijat:</p>
+    <ol id="Target"></ol>
     <script>
         function Funktio() {
+            const luku = parseInt(document.getElementById("Luku").value)
+            console.log(luku)
 
+            let Taulukko = [];
+            let html_str = "";
+            for (let index = 0; index < luku; index++) {
+                let äijä = prompt("Mikä on juoksijan nimi?");
+                Taulukko.push(äijä)
+                Taulukko.sort()   
+            }
+            for (let i = 0; i < Taulukko.length; i++) {
+                html_str = html_str + "<li>" + Taulukko[i] + "</li>";
+            }
+            document.querySelector("#Target").innerHTML = html_str;
         }
     </script>
 </body>

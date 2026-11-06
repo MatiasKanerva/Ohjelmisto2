@@ -17,11 +17,11 @@
             const Luvut = Input.split(" ");
             let Taulukko = [];
             
-
-            for (let index = 0; index < 5; index++) {
-                Taulukko[index] = Luvut[index];
+            let x = 0;
+            for (let index = 4; index >= 0; index--) {
+                Taulukko[x] = Luvut[index];
+                x++;
             }
-            Taulukko.reverse()
             document.querySelector("#Target").innerHTML = "Käännetty taulukko on: " + Taulukko;
         }
     </script>
